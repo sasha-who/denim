@@ -1,3 +1,24 @@
 .site-header {
-  display: block;
+  background-color: $background-color-secondary;
+}
+
+.site-header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  background-color: $background-color-primary;
+}
+
+.site-header__menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.site-header__buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 59px;
 }

@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 14px;
+  // line-height: 18px;
+  // font-family: $font-family-primary;
+  // color: $text-color-darkest;
+
+  background-color: $background-color-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

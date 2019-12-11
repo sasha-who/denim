@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Denim</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="site-header__logo logo" href="#">
-        <img class="logo__image" src="img/logo.svg" width="75" height="17">
-      </a>
-
-      <nav class="site-header__navigation">
-        <ul class="site-header__navigation-list navigation">
-          <li class="navigation-item">Woman</li>
-          <li class="navigation-item">Man</li>
-          <li class="navigation-item">New</li>
-        </ul>
-      </nav>
-
-      <div class="site-header__search search">
-        <button class="search__button">
-          <img class="search__icon" src="img/search.svg" width="16" height="16">
-        </button>
+      <div class="site-header__logo-wrapper">
+        <a class="site-header__logo logo" href="#">
+          <img class="logo__image" src="img/logo.svg" width="75" height="17">
+        </a>
       </div>
 
-      <a class="site-header__basket" href="#">
-        <img class="site-header__basket-icon" src="img/basket.svg" width="18" height="16">
-      </a>
+      <div class="site-header__menu-wrapper">
+        <nav class="site-header__navigation">
+          <ul class="site-header__navigation-list navigation">
+            <li class="navigation-item">Woman</li>
+            <li class="navigation-item">Man</li>
+            <li class="navigation-item">New</li>
+          </ul>
+        </nav>
+
+        <div class="site-header__buttons-wrapper">
+          <div class="site-header__search search">
+            <button class="search__button">
+              <img class="search__icon" src="img/search.svg" width="16" height="16">
+            </button>
+          </div>
+
+          <a class="site-header__basket basket" href="#">
+            <img class="basket__icon" src="img/basket.svg" width="18" height="16">
+          </a>
+        </div>
+      </div>
     </header>
   </body>
 </html>
