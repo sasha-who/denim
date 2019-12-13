@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="site-header">
       <div class="site-header__logo-wrapper">
         <a class="site-header__logo logo" href="#">
@@ -26,12 +30,16 @@
         <div class="site-header__buttons-wrapper">
           <div class="site-header__search search">
             <button class="search__button">
-              <img class="search__icon" src="img/search.svg" width="16" height="16">
+              <svg class="search__icon" width="18" height="18" fill="none">
+                <use xlink:href="#icon-search"></use>
+              </svg>
             </button>
           </div>
 
           <a class="site-header__basket basket" href="#">
-            <img class="basket__icon" src="img/basket.svg" width="18" height="16">
+            <svg class="basket__icon" width="20" height="18" fill="none">
+              <use xlink:href="#icon-basket"></use>
+            </svg>
           </a>
         </div>
       </div>
