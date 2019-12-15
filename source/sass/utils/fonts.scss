@@ -2,7 +2,7 @@
   font-family: "Work Sans";
   src: url("../fonts/work-sans_medium.woff2") format("woff2"),
     url("../fonts/work-sans_medium.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -12,6 +12,15 @@
   src: url("../fonts/work-sans_bold.woff2") format("woff2"),
     url("../fonts/work-sans_bold.woff") format("woff");
   font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/work-sans_regular.woff2") format("woff2"),
+    url("../fonts/work-sans_regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

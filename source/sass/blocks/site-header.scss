@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 3px;
 
   background-color: $background-color-primary;
 }
@@ -20,5 +20,23 @@
 .site-header__buttons-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 59px;
+  align-items: center;
+  width: 69px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-header__logo-wrapper {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .site-header__menu-wrapper {
+    padding: 0 45px;
+    padding-top: 15px;
+  }
+
+  .site-header__buttons-wrapper {
+    width: 93px;
+    margin-right: -10px;
+  }
 }
