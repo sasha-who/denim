@@ -1,0 +1,13 @@
+@mixin active-color {
+  &:hover {
+    color: $text-color-active;
+  }
+
+  &:focus {
+    color: $text-color-active;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

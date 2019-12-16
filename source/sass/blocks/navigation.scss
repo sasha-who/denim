@@ -1,5 +1,6 @@
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   max-width: 215px;
   margin: 0;
   padding: 0;
@@ -15,10 +16,27 @@
 
   text-decoration: none;
   color: $text-color-darkest;
+
+  @include active-color;
 }
 
 @media (min-width: $tablet-width) {
+  .navigation {
+    max-width: 550px;
+  }
+
   .navigation__link {
     padding-right: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation__link {
+    padding-top: 0;
+    padding-bottom: 26px;
   }
 }

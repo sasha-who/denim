@@ -19,9 +19,11 @@
 
 .site-header__buttons-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 69px;
+  width: 78px;
+  margin-right: -10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,6 +39,36 @@
 
   .site-header__buttons-wrapper {
     width: 93px;
-    margin-right: -10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-header__logo-wrapper {
+    padding-top: 9px;
+    padding-bottom: 4px;
+  }
+
+  .site-header__menu-wrapper {
+    align-items: flex-start;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 98px;
+    padding-top: 39px;
+  }
+
+  .site-header__navigation {
+    padding-top: 5px;
+  }
+
+  .site-header__buttons-wrapper {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45px;
+    margin-right: -15px;
+  }
+
+  .site-header__basket {
+    margin-bottom: 9px;
   }
 }
