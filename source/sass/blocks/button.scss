@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px;
+
+  text-decoration: none;
+  text-align: center;
+  color: $button-text-color;
+  background-color: $button-background-color;
+
+  &--large {
+    width: 204px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}

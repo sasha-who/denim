@@ -1,0 +1,42 @@
+.promo {
+  @include container;
+
+  position: relative;
+
+  padding-top: 315px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: calc(50% - 120px);
+
+    width: 241px;
+    height: 289px;
+
+    background-image: url("../img/promo-photo-mobile@1x.jpg"), url("../img/diagonal-top.svg"), url("../img/diagonal-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: center, top left, bottom right;
+  }
+}
+
+.promo__caption {
+  margin: 0;
+  margin-bottom: 13px;
+  padding-top: 13px;
+
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-color-medium-dark;
+  text-align: center;
+}
+
+.promo__title {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+.promo__social {
+  display: none;
+}
