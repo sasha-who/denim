@@ -1,11 +1,10 @@
 .button {
   display: block;
   box-sizing: border-box;
-  margin: 0 auto;
   padding: 10px;
 
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
   color: $button-text-color;
   background-color: $button-background-color;
 
@@ -13,5 +12,13 @@
     width: 204px;
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--large {
+      width: 219px;
+    }
   }
 }

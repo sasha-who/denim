@@ -3,7 +3,11 @@
 
   position: relative;
 
-  padding-top: 315px;
+  padding-top: 328px;
+  padding-bottom: 50px;
+
+  background-color: $background-color-secondary;
+  color: $text-color-medium-dark;
 
   &::before {
     content: "";
@@ -23,11 +27,9 @@
 .promo__caption {
   margin: 0;
   margin-bottom: 13px;
-  padding-top: 13px;
 
   font-size: 18px;
   line-height: 21px;
-  color: $text-color-medium-dark;
   text-align: center;
 }
 
@@ -37,6 +39,72 @@
   margin-bottom: 39px;
 }
 
+.promo__button {
+  margin: 0 auto;
+}
+
 .promo__social {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding-top: 73px;
+    padding-bottom: 40px;
+    padding-left: 133px;
+
+    &::before {
+      top: -30px;
+      left: auto;
+      right: 45px;
+
+      width: 324px;
+      height: 379px;
+
+      background-image: url("../img/promo-photo-tablet@1x.jpg"), url("../img/diagonal-top.svg"), url("../img/diagonal-bottom.svg");
+      background-size: auto, 141px, 141px;
+    }
+  }
+
+  .promo__caption {
+    margin-bottom: 16px;
+
+    text-align: left;
+  }
+
+  .promo__title {
+    width: 225px;
+    height: 85px;
+    margin: 0;
+    margin-bottom: 61px;
+  }
+
+  .promo__button {
+    margin: 0;
+    margin-bottom: 65px;
+  }
+
+  .promo__social {
+    display: block;
+    padding-right: 25px;
+
+    text-align: right;
+  }
+
+  .promo__social-item {
+    margin-right: 20px;
+    padding: 5px;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $text-color-darkest;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Добавить активное состояние для кнопок и ссылки
