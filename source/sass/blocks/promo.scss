@@ -49,6 +49,10 @@
   display: none;
 }
 
+.promo__social-item {
+  @include active-color;
+}
+
 @media (min-width: $tablet-width) {
   .promo__wrapper {
     @include container-tablet;

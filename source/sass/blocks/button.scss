@@ -13,6 +13,19 @@
     padding-top: 22px;
     padding-bottom: 22px;
   }
+
+  &:hover {
+    color: $text-color-active;
+  }
+
+  &:focus {
+    color: $text-color-active;
+  }
+
+  &:active {
+    color: $button-text-color;
+    background-color: $button-background-color-active;
+  }
 }
 
 @media (min-width: $tablet-width) {

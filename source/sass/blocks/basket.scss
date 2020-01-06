@@ -1,4 +1,6 @@
 .basket {
+  @include active-opacity;
+
   padding: 10px;
 }
 
