@@ -1,13 +1,15 @@
 .promo {
-  @include container;
+  background-color: $background-color-secondary;
+  color: $text-color-medium-dark;
+}
+
+.promo__wrapper {
+  @include container-mobile;
 
   position: relative;
 
   padding-top: 328px;
   padding-bottom: 50px;
-
-  background-color: $background-color-secondary;
-  color: $text-color-medium-dark;
 
   &::before {
     content: "";
@@ -48,7 +50,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo {
+  .promo__wrapper {
+    @include container-tablet;
+
     padding-top: 73px;
     padding-bottom: 40px;
     padding-left: 133px;
@@ -86,7 +90,7 @@
 
   .promo__social {
     display: block;
-    padding-right: 25px;
+    margin-right: -5px;
 
     text-align: right;
   }
@@ -107,4 +111,53 @@
   }
 }
 
-// Добавить активное состояние для кнопок и ссылки
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    @include container-desktop;
+
+    padding-top: 10px;
+    padding-bottom: 43px;
+    padding-left: 268px;
+
+    &::before {
+      top: -178px;
+      right: 222px;
+
+      width: 526px;
+      height: 618px;
+
+      background-image: url("../img/promo-photo-desktop@1x.jpg"), url("../img/diagonal-top.svg"), url("../img/diagonal-bottom.svg");
+      background-size: 430px, 234px, 234px;
+    }
+  }
+
+  .promo__title {
+    width: 294px;
+    height: 112px;
+    margin-bottom: 47px;
+  }
+
+  .promo__button {
+    margin-bottom: 56px;
+  }
+
+  .promo__social {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-align: center;
+  }
+
+  .promo__social-item {
+    max-width: 120px;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+}

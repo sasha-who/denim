@@ -12,9 +12,18 @@
   }
 }
 
-@mixin container {
+@mixin container-mobile {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
+}
+
+@mixin container-tablet {
+  padding: 0 45px;
+}
+
+@mixin container-desktop {
+  max-width: 1366px;
+  padding: 0 98px;
 }
