@@ -8,3 +8,14 @@
   text-align: center;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .all-link {
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
