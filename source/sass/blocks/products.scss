@@ -1,0 +1,47 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+
+  list-style: none;
+}
+
+.products__item {
+  margin-right: 30px;
+  margin-bottom: 27px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.products__image {
+  margin-bottom: 7px;
+}
+
+.products__characteristic {
+  border: none;
+  border-spacing: 0;
+}
+
+.products__characteristic-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.products__characteristic-cell {
+  margin-bottom: 3px;
+  padding: 0;
+
+  font-weight: 500;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--price {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
