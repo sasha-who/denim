@@ -71,3 +71,20 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .products__item {
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .products__image {
+    width: 270px;
+    height: 349px;
+  }
+}

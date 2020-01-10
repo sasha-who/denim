@@ -32,8 +32,8 @@
     justify-content: space-between;
 
     width: 768px;
+    margin-bottom: 50px;
     padding-top: 95px;
-    padding-bottom: 50px;
   }
 
   .bestsellers__title {
@@ -51,5 +51,24 @@
     order: 1;
     align-self: flex-start;
     margin: 0;
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bestsellers {
+    @include container-desktop;
+
+    width: auto;
+    margin-bottom: 82px;
+    padding-top: 118px;
+  }
+
+  .bestsellers__title {
+    margin-bottom: 62px;
+  }
+
+  .bestsellers__all {
+    margin-top: 7px;
   }
 }
