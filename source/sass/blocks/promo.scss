@@ -20,7 +20,9 @@
     width: 241px;
     height: 289px;
 
-    background-image: url("../img/promo-photo-mobile@1x.jpg"), url("../img/diagonal-top.svg"), url("../img/diagonal-bottom.svg");
+    background-image: url("../img/promo-photo-mobile@1x.jpg"),
+                      url("../img/diagonal-promo-top.svg"),
+                      url("../img/diagonal-promo-bottom.svg");
     background-repeat: no-repeat;
     background-position: center, top left, bottom right;
   }
@@ -69,7 +71,9 @@
       width: 324px;
       height: 379px;
 
-      background-image: url("../img/promo-photo-tablet@1x.jpg"), url("../img/diagonal-top.svg"), url("../img/diagonal-bottom.svg");
+      background-image: url("../img/promo-photo-tablet@1x.jpg"),
+                        url("../img/diagonal-promo-top.svg"),
+                        url("../img/diagonal-promo-bottom.svg");
       background-size: auto, 141px, 141px;
     }
   }
@@ -130,7 +134,9 @@
       width: 526px;
       height: 618px;
 
-      background-image: url("../img/promo-photo-desktop@1x.jpg"), url("../img/diagonal-top.svg"), url("../img/diagonal-bottom.svg");
+      background-image: url("../img/promo-photo-desktop@1x.jpg"),
+                        url("../img/diagonal-promo-top.svg"),
+                        url("../img/diagonal-promo-bottom.svg");
       background-size: 430px, 234px, 234px;
     }
   }

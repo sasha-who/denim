@@ -1,0 +1,57 @@
+.banner {
+  position: relative;
+
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 226px;
+  padding: 0 15px;
+  padding-top: 15px;
+
+  background-image: url("../img/diagonal-banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $background-color-primary;
+  color: $text-color-darkest;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 320px;
+    height: 226px;
+
+    background-image: url("../img/banner-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.banner__wrapper {
+  padding-top: 36px;
+  padding-bottom: 40px;
+
+  background-color: $background-color-secondary;
+}
+
+.banner__description {
+  margin: 0;
+  margin-bottom: 2px;
+
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-color-medium-dark;
+  text-align: center;
+}
+
+.banner__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  text-align: center;
+}
+
+.banner__button {
+  margin: 0 auto;
+}
