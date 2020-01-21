@@ -7,7 +7,7 @@
   padding: 0 15px;
   padding-top: 15px;
 
-  background-image: url("../img/diagonal-banner.svg");
+  background-image: url("../img/diagonal-banner-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $background-color-primary;
@@ -49,9 +49,55 @@
   margin: 0;
   margin-bottom: 23px;
 
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
   text-align: center;
 }
 
 .banner__button {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    width: 310px;
+    padding: 20px 20px 20px 350px;
+
+    background-position: right;
+    background-size: auto 287px;
+    background-image: url("../img/diagonal-banner-tablet.svg");
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 352px;
+      height: 287px;
+
+      background-image: url("../img/banner-tablet@1x.jpg");
+    }
+  }
+
+  .banner__wrapper {
+    padding-top: 46px;
+    padding-bottom: 52px;
+    padding-left: 55px;
+  }
+
+  .banner__description {
+    text-align: left;
+  }
+
+  .banner__title {
+    margin-bottom: 31px;
+
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  .banner__button {
+    margin: 0;
+  }
 }
