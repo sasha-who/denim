@@ -3,6 +3,7 @@
 
   width: 290px;
   margin: 0 auto;
+  // Маргин вместо паддинга для отслеживания при позиционировании высоты блока с текстом на случай переполнения
   margin-bottom: 226px;
   padding: 0 15px;
   padding-top: 15px;
@@ -64,9 +65,9 @@
     width: 310px;
     padding: 20px 20px 20px 350px;
 
+    background-image: url("../img/diagonal-banner-tablet.svg");
     background-position: right;
     background-size: auto 287px;
-    background-image: url("../img/diagonal-banner-tablet.svg");
 
     &::before {
       top: 0;
@@ -99,5 +100,36 @@
 
   .banner__button {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    width: 400px;
+    padding: 31px 70px 31px 700px;
+
+    background-image: url("../img/diagonal-banner-desktop.svg");
+    background-size: auto 370px;
+
+    &::before {
+      width: 700px;
+      height: 370px;
+
+      background-image: url("../img/banner-desktop@1x.jpg");
+    }
+  }
+
+  .banner__wrapper {
+    padding-top: 66px;
+    padding-bottom: 72px;
+    padding-left: 69px;
+  }
+
+  .banner__description {
+    margin-bottom: 6px;
+  }
+
+  .banner__title {
+    margin-bottom: 43px;
   }
 }

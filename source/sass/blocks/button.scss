@@ -41,3 +41,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--small {
+      width: 200px;
+      padding-top: 21px;
+      padding-bottom: 24px;
+    }
+  }
+}
