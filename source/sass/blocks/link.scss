@@ -1,0 +1,10 @@
+.link {
+  @include active-color;
+
+  color: $text-color-darkest;
+  text-decoration: none;
+
+  &--image {
+    @include active-opacity;
+  }
+}

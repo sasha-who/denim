@@ -1,4 +1,6 @@
 .all-link {
+  @include active-color;
+
   display: block;
   width: 70px;
 
