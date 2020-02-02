@@ -121,3 +121,57 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .categories {
+    @include container-desktop;
+
+    width: auto;
+    margin-bottom: 78px;
+  }
+
+  .categories__title {
+    margin-bottom: 63px;
+  }
+
+  .categories__list {
+    column-count: 0;
+    column-gap: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categories__item {
+    width: 270px;
+    margin-right: 30px;
+
+    &:nth-child(1) {
+      order: 1;
+
+      background-image: url("../img/category-1-desktop@1x.jpg");
+    }
+
+    &:nth-child(2) {
+      order: 4;
+      margin-right: 0;
+
+      background-image: url("../img/category-2-desktop@1x.jpg");
+    }
+
+    &:nth-child(3) {
+      order: 2;
+
+      background-image: url("../img/category-3-desktop@1x.jpg");
+    }
+
+    &:nth-child(4) {
+      order: 3;
+
+      background-image: url("../img/category-4-desktop@1x.jpg");
+    }
+  }
+
+  .categories__all {
+    margin-top: 3px;
+  }
+}
