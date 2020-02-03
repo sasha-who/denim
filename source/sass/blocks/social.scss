@@ -1,0 +1,13 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-left: 4px;
+
+  list-style: none;
+}
+
+.social__item {
+  min-width: 20px;
+  margin-right: 34px;
+}
