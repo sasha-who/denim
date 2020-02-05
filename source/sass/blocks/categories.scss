@@ -122,11 +122,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .categories {
     @include container-desktop;
 
-    width: auto;
+    width: 1366px;
     margin-bottom: 78px;
   }
 
