@@ -10,8 +10,6 @@
   @include container-mobile;
 
   position: relative;
-
-  width: 320px;
 }
 
 .site-footer__logo {
@@ -69,7 +67,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 768px;
   }
 
   .site-footer__logo {
@@ -117,6 +114,10 @@
 @media (min-width: $desktop-width) {
   .site-footer {
     padding-top: 34px;
+  }
+
+  .site-footer__wrapper {
+    @include container-desktop;
   }
 
   .site-footer__logo {

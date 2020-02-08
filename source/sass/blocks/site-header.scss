@@ -17,7 +17,6 @@
 
   display: flex;
   justify-content: space-between;
-  width: 320px;
 }
 
 .site-header__buttons-wrapper {
@@ -38,7 +37,6 @@
   .site-header__menu-wrapper {
     @include container-tablet;
 
-    width: 768px;
     padding-top: 15px;
   }
 
@@ -57,7 +55,6 @@
     @include container-desktop;
 
     align-items: flex-start;
-    width: 1366px;
     padding-top: 41px;
   }
 

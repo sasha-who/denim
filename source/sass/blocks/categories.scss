@@ -1,7 +1,6 @@
 .categories {
   @include container-mobile;
 
-  width: 320px;
   margin-bottom: 60px;
   padding-top: 54px;
 
@@ -69,7 +68,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 768px;
     margin-bottom: 49px;
   }
 
@@ -126,7 +124,6 @@
   .categories {
     @include container-desktop;
 
-    width: 1366px;
     margin-bottom: 78px;
   }
 

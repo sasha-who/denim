@@ -1,17 +1,20 @@
 @mixin container-mobile {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
 }
 
 @mixin container-tablet {
+  width: 768px;
   padding: 0 45px;
 }
 
 @mixin container-desktop {
+  width: 1170px;
   max-width: 1366px;
-  padding: 0 98px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 @mixin active-color {
