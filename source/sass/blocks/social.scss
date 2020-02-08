@@ -43,3 +43,12 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social__item {
+    &:first-child {
+      min-width: 15px;
+      padding-left: 8px;
+    }
+  }
+}

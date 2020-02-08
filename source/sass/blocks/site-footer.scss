@@ -113,3 +113,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-footer {
+    padding-top: 34px;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 13px;
+  }
+
+  .site-footer__navigation {
+    margin-bottom: 11px;
+  }
+}
