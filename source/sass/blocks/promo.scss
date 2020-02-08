@@ -59,6 +59,7 @@
   .promo__wrapper {
     @include container-tablet;
 
+    width: 768px;
     padding-top: 73px;
     padding-bottom: 40px;
     padding-left: 133px;
@@ -123,16 +124,17 @@
   .promo__wrapper {
     @include container-desktop;
 
+    width: 1366px;
     padding-top: 10px;
     padding-bottom: 43px;
     padding-left: 268px;
 
     &::before {
-      top: -178px;
-      right: 222px;
+      top: -180px;
+      right: 220px;
 
       width: 526px;
-      height: 618px;
+      height: 620px;
 
       background-image: url("../img/promo-photo-desktop@1x.jpg"),
                         url("../img/diagonal-promo-top.svg"),
@@ -141,10 +143,14 @@
     }
   }
 
+  .promo__caption {
+    margin-bottom: 13px;
+  }
+
   .promo__title {
     width: 294px;
     height: 112px;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
   }
 
   .promo__button {
