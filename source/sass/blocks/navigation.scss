@@ -50,11 +50,31 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
-    max-width: 550px;
+    flex-direction: row;
+    width: auto;
+
+    &--main {
+      max-width: 550px;
+    }
+  }
+
+  .navigation__item {
+    width: auto;
+
+    text-align: left;
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
   }
 
   .navigation__link {
-    padding-right: 35px;
+    padding: 20px 35px 20px 0;
+
+    &--main {
+      padding: 24px 35px 24px 0;
+    }
   }
 }
 

@@ -75,3 +75,9 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .burger-button {
+    display: none;
+  }
+}
