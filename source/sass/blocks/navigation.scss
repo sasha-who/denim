@@ -80,11 +80,17 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
-    flex-direction: column;
+    &--main {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 7px;
+    }
   }
 
   .navigation__link {
-    padding-top: 0;
-    padding-bottom: 26px;
+    &--main {
+      padding-top: 0;
+      padding-bottom: 26px;
+    }
   }
 }
