@@ -8,13 +8,13 @@
 
   position: relative;
 
-  padding-top: 328px;
+  padding-top: 326px;
   padding-bottom: 50px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 11px;
     left: calc(50% - 120px);
 
     width: 241px;

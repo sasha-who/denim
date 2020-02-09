@@ -18,10 +18,7 @@
 }
 
 @mixin active-color {
-  &:hover {
-    color: $text-color-active;
-  }
-
+  &:hover,
   &:focus {
     color: $text-color-active;
   }
@@ -32,10 +29,7 @@
 }
 
 @mixin active-opacity {
-  &:hover {
-    opacity: 0.7;
-  }
-
+  &:hover,
   &:focus {
     opacity: 0.7;
   }
@@ -46,10 +40,7 @@
 }
 
 @mixin active-icon-fill {
-  &:hover > svg {
-    fill: $active-element-color;
-  }
-
+  &:hover > svg,
   &:focus > svg {
     fill: $active-element-color;
   }
@@ -60,10 +51,7 @@
 }
 
 @mixin active-icon-stroke {
-  &:hover > svg {
-    stroke: $active-element-color;
-  }
-
+  &:hover > svg,
   &:focus > svg {
     stroke: $active-element-color;
   }
