@@ -34,7 +34,9 @@
       width: 354px;
       height: 259px;
 
-      background-image: url("../img/catalog-navigation-tablet@1x.jpg"), url("../img/diagonal-promo-top.svg"), url("../img/diagonal-promo-top.svg");
+      background-image: url("../img/catalog-navigation-tablet@1x.jpg"),
+                        url("../img/diagonal-promo-top.svg"),
+                        url("../img/diagonal-promo-top.svg");
       background-size: auto, 239px, 182px;
       background-repeat: no-repeat;
       background-position: center, top right, bottom left;
@@ -49,5 +51,26 @@
 
   .catalog-navigation__breadcrumbs {
     margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-navigation {
+    padding-top: 73px;
+    padding-bottom: 64px;
+  }
+
+  .catalog-navigation__wrapper {
+    max-width: 1366px;
+    padding: 0;
+
+    &::before {
+      top: -72px;
+      right: 42px;
+    }
+  }
+
+  .catalog-navigation__title {
+    max-width: 272px;
   }
 }
