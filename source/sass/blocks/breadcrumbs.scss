@@ -31,8 +31,10 @@
   }
 
   // Актуально только для мобильной версии, потому что первый элемент хлебных крошек скрыт
-  &:nth-child(2)::before {
-    display: none;
+  &:nth-child(2) {
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -49,5 +51,23 @@
 
   &--active {
     color: $text-color-darkest;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .breadcrumbs__item {
+    &:first-child {
+      display: block;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        display: block;
+      }
+    }
   }
 }
