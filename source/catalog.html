@@ -80,6 +80,322 @@
           <h1 class="catalog-navigation__title title">Denim Collection Fall 2019</h1>
         </div>
       </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Products list</h2>
+
+        <form class="catalog__filters filters" method="get" action="#">
+          <button class="filters__main-toggle" type="button">Filter by</button>
+
+          <div class="filters__content">
+            <div class="filters__mobile-header">
+              <button class="filters__clear-button filters__clear-button--mobile" type="button">Clear all</button>
+
+              <p class="filters__title">Filters</p>
+
+              <button class="filters__close" type="button">Close</button>
+            </div>
+
+            <ul class="filters__list">
+              <li class="filters__item">
+                <button class="filters__name">Price</button>
+
+                <div class="filters__range">
+                  <div class="filters__scale">
+                    <div class="filters__bar"></div>
+                  </div>
+
+                  <div class="filters__toggle toggle-min"></div>
+
+                  <div class="filters__toggle toggle-max"></div>
+                </div>
+
+                <div class="filters__controls">
+                  <label class="filters__price" for="min-price">$</label>
+                  <input class="filters__input" id="min-price" name="min-price" type="text" value="40" aria-label="Minimum value">
+
+                  <label class="filters__price" for="max-price">$</label>
+                  <input class="filters__input" id="max-price" name="max-price" type="text" value="240" aria-label="Maximum value">
+                </div>
+              </li>
+
+              <li class="filters__item">
+                <button class="filters__name">Color</button>
+
+                <ul class="filters__colors">
+                  <li class="filters__color-item">
+                    <label class="filters__color-button" for="color-1"></label>
+                    <input class="filters__color-input visually-hidden" id="color-1" type="checkbox" name="color-1" aria-label="Light blue" checked>
+                  </li>
+
+                  <li class="filters__color-item">
+                    <label class="filters__color-button" for="color-2"></label>
+                    <input class="filters__color-input visually-hidden" id="color-2" type="checkbox" name="color-2" aria-label="Deep blue">
+                  </li>
+
+                  <li class="filters__color-item">
+                    <label class="filters__color-button" for="color-3"></label>
+                    <input class="filters__color-input visually-hidden" id="color-3" type="checkbox" name="color-3" aria-label="Grey">
+                  </li>
+
+                  <li class="filters__color-item">
+                    <label class="filters__color-button" for="color-4"></label>
+                    <input class="filters__color-input visually-hidden" id="color-4" type="checkbox" name="color-4" aria-label="Black">
+                  </li>
+
+                  <li class="filters__color-item">
+                    <label class="filters__color-button" for="color-5"></label>
+                    <input class="filters__color-input visually-hidden" id="color-5" type="checkbox" name="color-5" aria-label="Light grey">
+                  </li>
+
+                  <li class="filters__color-item">
+                    <label class="filters__color-button" for="color-6"></label>
+                    <input class="filters__color-input visually-hidden" id="color-6" type="checkbox" name="color-6" aria-label="Blue">
+                  </li>
+                </ul>
+              </li>
+
+              <li class="filters__item">
+                <button class="filters__name">Collection</button>
+
+                <ul class="filters__collections">
+                  <li class="filters__collection-item">
+                    <label class="filters__collection-button" for="collection-casual">Casual</label>
+                    <input class="filters__collection-input" id="collection-casual" name="casual">
+                  </li>
+
+                  <li class="filters__collection-item">
+                    <label class="filters__collection-button" for="collection-petite">Petite</label>
+                    <input class="filters__collection-input" id="collection-petite" name="petite">
+                  </li>
+
+                  <li class="filters__collection-item">
+                    <label class="filters__collection-button" for="collection-classic">Classic</label>
+                    <input class="filters__collection-input" id="collection-classic" name="classic" checked>
+                  </li>
+
+                  <li class="filters__collection-item">
+                    <label class="filters__collection-button" for="collection-soulluxe">Soulluxe</label>
+                    <input class="filters__collection-input" id="collection-soulluxe" name="soulluxe">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button class="filters__apply-button button">Apply (9 products)</button>
+
+            <button class="filters__clear-button" type="button">Clear all</button>
+          </div>
+        </form>
+
+        <ul class="catalog__products products">
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-1-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-1-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-1-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 40</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-2-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-2-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-2-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 70</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-3-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-3-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-3-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 60</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-4-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-4-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-4-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 50</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-5-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-5-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-5-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 160</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-6-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-6-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-6-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 40</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-7-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-7-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-7-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 110</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-8-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-8-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-8-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 35</td>
+              </tr>
+            </table>
+          </li>
+
+          <li class="products__item">
+            <a class="products__image-link link link--image" href="product-card.html">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/product-9-desktop@1x.jpg">
+
+                <source media="(min-width: 768px)" srcset="img/product-9-tablet@1x.jpg">
+
+                <img class="products__image" src="img/product-9-mobile@1x.jpg" width="130" height="160" alt="Jacket">
+              </picture>
+            </a>
+
+            <table class="products__characteristic">
+              <tr class="products__characteristic-row">
+                <td class="products__characteristic-cell products__characteristic-cell--name">
+                  <a class="products__characteristic-link link" href="product-card.html">Jacket</a>
+                </td>
+
+                <td class="products__characteristic-cell products__characteristic-cell--price">$ 85</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+
+        <div class="catalog__range range">
+          <p class="range__description">Showing 9 of 45 items</p>
+
+          <div class="range__scale">
+            <div class="range__bar"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="js/menu-open.js"></script>
