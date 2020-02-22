@@ -39,6 +39,13 @@
   }
 }
 
+@mixin active-border {
+  &:hover,
+  &:focus {
+    border: 2px solid $active-element-color;
+  }
+}
+
 @mixin active-icon-fill {
   &:hover > svg,
   &:focus > svg {

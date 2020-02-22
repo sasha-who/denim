@@ -85,9 +85,15 @@
         <h2 class="visually-hidden">Products list</h2>
 
         <form class="catalog__filters filters" method="get" action="#">
-          <button class="filters__main-toggle" type="button">Filter by</button>
+          <button class="filters__toggle filters__toggle--main" type="button">
+            <span class="filters__label">Filter by</span>
 
-          <div class="filters__content">
+            <svg class="filters__arrow-icon" width="18" height="11" fill="none" stroke="#151c22">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
+
+          <div class="filters__content filters__content--main filters__content--opened">
             <div class="filters__mobile-header">
               <button class="filters__clear-button filters__clear-button--mobile" type="button">Clear all</button>
 
@@ -98,57 +104,69 @@
 
             <ul class="filters__list">
               <li class="filters__item">
-                <button class="filters__name">Price</button>
+                <button class="filters__toggle" type="button">
+                  <span class="filters__name">Price</span>
 
-                <div class="filters__range">
+                  <svg class="filters__arrow-icon" width="18" height="11" fill="none" stroke="#151c22">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </button>
+
+                <div class="filters__content">
                   <div class="filters__scale">
                     <div class="filters__bar"></div>
                   </div>
 
-                  <div class="filters__toggle toggle-min"></div>
+                  <div class="filters__range-toggle toggle-min"></div>
 
-                  <div class="filters__toggle toggle-max"></div>
-                </div>
+                  <div class="filters__range-toggle toggle-max"></div>
 
-                <div class="filters__controls">
-                  <label class="filters__price" for="min-price">$</label>
-                  <input class="filters__input" id="min-price" name="min-price" type="text" value="40" aria-label="Minimum value">
+                  <div class="filters__controls">
+                    <label class="filters__controls-price" for="min-price">$</label>
+                    <input class="filters__controls-input" id="min-price" name="min-price" type="text" value="40" aria-label="Minimum value">
 
-                  <label class="filters__price" for="max-price">$</label>
-                  <input class="filters__input" id="max-price" name="max-price" type="text" value="240" aria-label="Maximum value">
+                    <label class="filters__controls-price" for="max-price">$</label>
+                    <input class="filters__controls-input" id="max-price" name="max-price" type="text" value="240" aria-label="Maximum value">
+                  </div>
                 </div>
               </li>
 
               <li class="filters__item">
-                <button class="filters__name">Color</button>
+                <button class="filters__toggle" type="button">
+                  <span class="filters__name">Color</span>
 
-                <ul class="filters__colors">
-                  <li class="filters__color-item">
+                  <svg class="filters__arrow-icon" width="18" height="11" fill="none" stroke="#151c22">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </button>
+
+                <ul class="filters__content">
+                  <li class="filters__color">
                     <label class="filters__color-button" for="color-1"></label>
                     <input class="filters__color-input visually-hidden" id="color-1" type="checkbox" name="color-1" aria-label="Light blue" checked>
                   </li>
 
-                  <li class="filters__color-item">
+                  <li class="filters__color">
                     <label class="filters__color-button" for="color-2"></label>
                     <input class="filters__color-input visually-hidden" id="color-2" type="checkbox" name="color-2" aria-label="Deep blue">
                   </li>
 
-                  <li class="filters__color-item">
+                  <li class="filters__color">
                     <label class="filters__color-button" for="color-3"></label>
                     <input class="filters__color-input visually-hidden" id="color-3" type="checkbox" name="color-3" aria-label="Grey">
                   </li>
 
-                  <li class="filters__color-item">
+                  <li class="filters__color">
                     <label class="filters__color-button" for="color-4"></label>
                     <input class="filters__color-input visually-hidden" id="color-4" type="checkbox" name="color-4" aria-label="Black">
                   </li>
 
-                  <li class="filters__color-item">
+                  <li class="filters__color">
                     <label class="filters__color-button" for="color-5"></label>
                     <input class="filters__color-input visually-hidden" id="color-5" type="checkbox" name="color-5" aria-label="Light grey">
                   </li>
 
-                  <li class="filters__color-item">
+                  <li class="filters__color">
                     <label class="filters__color-button" for="color-6"></label>
                     <input class="filters__color-input visually-hidden" id="color-6" type="checkbox" name="color-6" aria-label="Blue">
                   </li>
@@ -156,25 +174,31 @@
               </li>
 
               <li class="filters__item">
-                <button class="filters__name">Collection</button>
+                <button class="filters__toggle" type="button">
+                  <span class="filters__name">Collection</span>
 
-                <ul class="filters__collections">
-                  <li class="filters__collection-item">
+                  <svg class="filters__arrow-icon" width="18" height="11" fill="none" stroke="#151c22">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </button>
+
+                <ul class="filters__content">
+                  <li class="filters__collection">
                     <label class="filters__collection-button" for="collection-casual">Casual</label>
                     <input class="filters__collection-input" id="collection-casual" name="casual">
                   </li>
 
-                  <li class="filters__collection-item">
+                  <li class="filters__collection">
                     <label class="filters__collection-button" for="collection-petite">Petite</label>
                     <input class="filters__collection-input" id="collection-petite" name="petite">
                   </li>
 
-                  <li class="filters__collection-item">
+                  <li class="filters__collection">
                     <label class="filters__collection-button" for="collection-classic">Classic</label>
                     <input class="filters__collection-input" id="collection-classic" name="classic" checked>
                   </li>
 
-                  <li class="filters__collection-item">
+                  <li class="filters__collection">
                     <label class="filters__collection-button" for="collection-soulluxe">Soulluxe</label>
                     <input class="filters__collection-input" id="collection-soulluxe" name="soulluxe">
                   </li>
@@ -182,7 +206,7 @@
               </li>
             </ul>
 
-            <button class="filters__apply-button button">Apply (9 products)</button>
+            <button class="filters__apply-button button button--filter">Apply (9 products)</button>
 
             <button class="filters__clear-button" type="button">Clear all</button>
           </div>
@@ -399,5 +423,6 @@
     </main>
 
     <script src="js/menu-open.js"></script>
+    <script src="js/filters.js"></script>
   </body>
 </html>

@@ -19,10 +19,10 @@
   width: 100%;
 
   text-align: center;
-  border-bottom: 2px solid $border-color;
+  border-bottom: 2px solid $border-color-light;
 
   &:first-child {
-    border-top: 2px solid $border-color;
+    border-top: 2px solid $border-color-light;
   }
 
   &--main {
