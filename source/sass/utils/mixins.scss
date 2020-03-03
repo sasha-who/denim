@@ -67,3 +67,10 @@
     opacity: 0.7;
   }
 }
+
+@mixin active-scale {
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}

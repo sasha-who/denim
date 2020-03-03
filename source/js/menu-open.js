@@ -1,5 +1,6 @@
 'use strict';
 
+(function () {
 let burgerButton = document.querySelector('.burger-button');
 let navigationElement = document.querySelector('.site-header__navigation');
 
@@ -21,3 +22,4 @@ if (navigationElement) {
   navigationElement.classList.remove('site-header__navigation--opened');
   navigationElement.classList.add('site-header__navigation--closed');
 }
+})();
