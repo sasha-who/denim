@@ -1,1 +1,13 @@
+.catalog {
+  @include container-mobile;
+}
 
+@media (min-width: $tablet-width) {
+  .catalog {
+    @include container-tablet;
+  }
+
+  .catalog__filters {
+    margin-left: auto;
+  }
+}

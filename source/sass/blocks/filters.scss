@@ -2,10 +2,6 @@
   font-weight: 500;
 }
 
-.filters__label {
-  margin-right: 160px;
-}
-
 .filters__mobile-header {
   display: flex;
   flex-wrap: wrap;
@@ -293,4 +289,128 @@
   position: absolute;
   top: calc(100% - 150px);
   left: calc(50% - 145px);
+}
+
+@media (min-width: $tablet-width) {
+  .filters {
+    position: relative;
+  }
+
+  .filters__mobile-header {
+    display: none;
+  }
+
+  .filters__toggle {
+    width: 173px;
+
+    &--main {
+      width: 207px;
+      margin-left: auto;
+      margin-right: 0;
+      padding: 14px 15px;
+    }
+  }
+
+  .filters__content {
+    &--main {
+      position: absolute;
+      top: 53px;
+      left: calc(100% - 207px);
+      z-index: 0;
+
+      width: 203px;
+      min-height: 305px;
+      padding: 0;
+
+      border: 2px solid $border-color-dark;
+      border-top: none;
+    }
+
+    &--color {
+      max-width: 100px;
+      padding-bottom: 4px;
+    }
+
+    &--collection {
+      padding-top: 4px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .filters__content--opened .filters__list {
+    margin-bottom: 41px;
+  }
+
+  .filters__item {
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  .filters__item-wrapper {
+    width: auto;
+  }
+
+  .filters__scale {
+    margin-bottom: 10px;
+  }
+
+  .filters__bar {
+    width: 117px;
+    margin-left: 30px;
+  }
+
+  .filters__range-toggle {
+    top: -7px;
+    left: 19px;
+
+    &--max {
+      left: 132px;
+    }
+  }
+
+  .filters__control {
+    &--min {
+      margin-left: 10px;
+    }
+
+    &--max {
+      margin-left: 49px;
+    }
+  }
+
+  .filters__control-input {
+    max-width: 40px;
+  }
+
+  .filters__color {
+    margin-right: 25px;
+    margin-bottom: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .filters__collection {
+    margin-bottom: 10px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .filters__apply-button {
+    position: static;
+
+    margin-bottom: 23px;
+  }
+
+  .filters__clear-button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+  }
 }

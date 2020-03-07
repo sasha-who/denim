@@ -15,6 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-navigation {
+    margin-bottom: 24px;
     padding-top: 77px;
     padding-bottom: 72px;
 
@@ -56,7 +57,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .catalog-navigation {
     padding-top: 73px;
     padding-bottom: 64px;
