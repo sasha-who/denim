@@ -11,3 +11,9 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    @include container-desktop;
+  }
+}
