@@ -13,6 +13,22 @@
   &:nth-child(2n) {
     margin-right: 0;
   }
+
+  &--big {
+    width: 290px;
+    margin-right: 0;
+  }
+
+  // Необходимо переопределить, из-за большого элемента сбилась логика чётный/нечётный
+  &--catalog {
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 0;
+    }
+  }
 }
 
 .products__image {
@@ -55,6 +71,16 @@
     width: 324px;
     height: 349px;
     margin-bottom: 18px;
+
+    &--catalog {
+      width: 206px;
+      height: 279px;
+    }
+
+    &--big {
+      width: 442px;
+      height: 672px;
+    }
   }
 
   .products__characteristic-cell {
@@ -86,5 +112,15 @@
   .products__image {
     width: 270px;
     height: 349px;
+
+    &--catalog {
+      width: 243px;
+      height: 270px;
+    }
+
+    &--big {
+      width: 552px;
+      height: 670px;
+    }
   }
 }

@@ -1,5 +1,25 @@
 .catalog {
   @include container-mobile;
+
+  margin-bottom: 60px;
+}
+
+.catalog__filters {
+  margin-bottom: 40px;
+}
+
+.catalog__products {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.catalog__range {
+  width: 177px;
+  margin: 0 auto;
+}
+
+.catalog__load-button {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

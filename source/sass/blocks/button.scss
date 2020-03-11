@@ -1,7 +1,7 @@
 .button {
   display: block;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 22px 10px 22px 10px;
 
   font-family: "Work Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -15,8 +15,10 @@
 
   &--large {
     width: 204px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+  }
+
+  &--medium {
+    width: 177px;
   }
 
   &--small {
@@ -28,8 +30,6 @@
   &--filter {
     width: 290px;
     margin: 0 auto;
-    padding-top: 22px;
-    padding-bottom: 22px;
   }
 
   &:hover {
