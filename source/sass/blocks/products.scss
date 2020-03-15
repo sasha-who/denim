@@ -1,35 +1,17 @@
 .products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
 
   list-style: none;
 }
 
 .products__item {
-  margin-right: 30px;
   margin-bottom: 27px;
-
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
 
   &--big {
     width: 290px;
-    margin-right: 0;
-  }
-
-  &--catalog {
-    // Необходимо переопределить логику отступов, следующих после увеличенного элемента:
-    // Для всех чётных элементов
-    &:nth-child(2n + 6) {
-      margin-right: 30px;
-    }
-
-    // Для всех нечётных элементов
-    &:nth-child(2n + 7) {
-      margin-right: 0;
-    }
   }
 }
 
@@ -65,35 +47,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .products {
+    justify-content: flex-start;
+    margin-right: -30px;
+  }
+
   .products__item {
+    margin-right: 30px;
     margin-bottom: 46px;
 
     &--catalog {
-      &:nth-child(2n) {
-        margin-right: 30px;
-      }
-
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-
-      // Необходимо переопределить логику отступов, следующих после увеличенного элемента:
-      // Для всех элементов, кроме третьего в ряду
-      &:nth-child(2n + 7) {
-        margin-right: 30px;
-      }
-
-      // Для каждого третьего элемента в ряду
-      &:nth-child(3n + 9) {
-        margin-right: 0;
-      }
-
       &:nth-child(6) {
         margin-top: -393px;
       }
 
       &:nth-child(7) {
-        margin-left: -206px;
+        margin-left: -236px;
       }
     }
 
@@ -134,13 +103,50 @@
 }
 
 @media (min-width: $desktop-width) {
+  .products {
+    &--catalog {
+      margin-right: -66px;
+    }
+  }
+
   .products__item {
-    &:nth-child(2n) {
-      margin-right: 30px;
+    &--catalog {
+      margin-right: 66px;
+      margin-bottom: 62px;
+
+      &:nth-child(-n + 4) {
+        order: -3;
+      }
+
+      &:nth-child(5) {
+        order: -1;
+      }
+
+      &:nth-child(6) {
+        order: -2;
+
+        margin-top: 0;
+      }
+
+      &:nth-child(7) {
+        order: -2;
+
+        margin-left: 0;
+      }
+
+      &:nth-child(8),
+      &:nth-child(9) {
+        margin-top: -400px;
+      }
+
+      // Для нивелирования отрицательного отступа при добавлении новых элементов
+      &:nth-child(10) {
+        margin-left: -618px;
+      }
     }
 
-    &:nth-child(4n) {
-      margin-right: 0;
+    &--big {
+      width: 552px;
     }
   }
 

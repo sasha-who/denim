@@ -41,5 +41,11 @@
 @media (min-width: $desktop-width) {
   .catalog {
     @include container-desktop;
+
+    margin-bottom: 130px;
+  }
+
+  .catalog__filters {
+    margin-bottom: 40px;
   }
 }
