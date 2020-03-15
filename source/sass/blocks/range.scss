@@ -1,12 +1,18 @@
+.range {
+  width: 177px;
+  margin-bottom: 30px;
+}
+
 .range__description {
   margin: 0;
   margin-bottom: 10px;
+
+  text-align: center;
 }
 
 .range__scale {
   width: 100%;
   height: 2px;
-  margin-bottom: 30px;
 
   background-color: $background-color-secondary;
 }
@@ -16,4 +22,18 @@
   height: 2px;
 
   background-color: $background-color-tertiary;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    width: 206px;
+    margin-bottom: 40px;
+  }
+
+  .range__description {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 21px;
+  }
 }

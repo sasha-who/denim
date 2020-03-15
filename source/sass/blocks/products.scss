@@ -19,13 +19,15 @@
     margin-right: 0;
   }
 
-  // Необходимо переопределить, из-за большого элемента сбилась логика чётный/нечётный
   &--catalog {
-    &:nth-child(2n) {
+    // Необходимо переопределить логику отступов, следующих после увеличенного элемента:
+    // Для всех чётных элементов
+    &:nth-child(2n + 6) {
       margin-right: 30px;
     }
 
-    &:nth-child(2n + 1) {
+    // Для всех нечётных элементов
+    &:nth-child(2n + 7) {
       margin-right: 0;
     }
   }
@@ -65,6 +67,39 @@
 @media (min-width: $tablet-width) {
   .products__item {
     margin-bottom: 46px;
+
+    &--catalog {
+      &:nth-child(2n) {
+        margin-right: 30px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      // Необходимо переопределить логику отступов, следующих после увеличенного элемента:
+      // Для всех элементов, кроме третьего в ряду
+      &:nth-child(2n + 7) {
+        margin-right: 30px;
+      }
+
+      // Для каждого третьего элемента в ряду
+      &:nth-child(3n + 9) {
+        margin-right: 0;
+      }
+
+      &:nth-child(6) {
+        margin-top: -393px;
+      }
+
+      &:nth-child(7) {
+        margin-left: -206px;
+      }
+    }
+
+    &--big {
+      width: 442px;
+    }
   }
 
   .products__image {

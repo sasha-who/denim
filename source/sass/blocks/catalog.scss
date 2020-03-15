@@ -14,7 +14,6 @@
 }
 
 .catalog__range {
-  width: 177px;
   margin: 0 auto;
 }
 
@@ -25,10 +24,17 @@
 @media (min-width: $tablet-width) {
   .catalog {
     @include container-tablet;
+
+    margin-bottom: 101px;
   }
 
   .catalog__filters {
+    margin-bottom: 23px;
     margin-left: auto;
+  }
+
+  .catalog__products {
+    margin-bottom: 6px;
   }
 }
 
