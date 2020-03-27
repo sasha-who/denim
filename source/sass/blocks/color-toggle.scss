@@ -1,0 +1,38 @@
+.color-toggle__button {
+  @include active-scale;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--light-blue {
+    background-color: #b0c3c7;
+  }
+
+  &--deep-blue {
+    background-color: #3b6392;
+  }
+
+  &--grey {
+    background-color: #Bfc3c8;
+  }
+
+  &--black {
+    background-color: #2d2e2e;
+  }
+
+  &--light-grey {
+    background-color: #ececec;
+  }
+
+  &--blue {
+    background-color: #4193da;
+  }
+}
+
+.color-toggle__input:checked + .color-toggle__button {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #b0c3c7;
+}

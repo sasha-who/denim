@@ -59,7 +59,88 @@
     </header>
 
     <main class="site-main">
+      <section class="card">
+        <h2 class="visually-hidden">Product card</h2>
 
+        <div class="card__photos">
+          <p class="card__item">
+            <img class="card__image card__image--large" src="" width="244" height="310" alt="Product">
+          </p>
+
+          <ul class="card__thumbnails-list">
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <img class="card__image" src="" width="244" height="310" alt="Product">
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <img class="card__image" src="" width="244" height="310" alt="Product">
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <img class="card__image" src="" width="244" height="310" alt="Product">
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <img class="card__image" src="" width="244" height="310" alt="Product">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card__characteristics">
+          <h1 class="card__title title">Overalls</h1>
+
+          <p class="card__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back pockets.</p>
+
+          <div class="card__colors">
+            <p class="card__colors-header">Color</p>
+
+            <ul class="card__colors-list">
+              <li class="card__colors-item color-toggle">
+                <input class="color-toggle__input visually-hidden" id="color-1" type="checkbox" name="color-1" checked>
+                <label class="color-toggle__button color-toggle__button--light-blue" for="color-1" aria-label="Light blue"></label>
+              </li>
+
+              <li class="card__colors-item color-toggle">
+                <input class="color-toggle__input visually-hidden" id="color-2" type="checkbox" name="color-2">
+                <label class="color-toggle__button color-toggle__button--deep-blue" for="color-2" aria-label="Deep blue"></label>
+              </li>
+
+              <li class="card__colors-item color-toggle">
+                <input class="color-toggle__input visually-hidden" id="color-3" type="checkbox" name="color-3">
+                <label class="color-toggle__button color-toggle__button--grey" for="color-3" aria-label="Grey"></label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card__sizes">
+            <p class="card__sizes-header">Size</p>
+
+            <ul class="card__sizes-list">
+              <li class="card__sizes-item size-toggle">xs</li>
+
+              <li class="card__sizes-item size-toggle">s</li>
+
+              <li class="card__sizes-item size-toggle">m</li>
+
+              <li class="card__sizes-item size-toggle">l</li>
+
+              <li class="card__sizes-item size-toggle">xl</li>
+            </ul>
+          </div>
+
+          <p class="card__price">$ 160</p>
+
+          <button class="card__add-button button">Add to cart</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
