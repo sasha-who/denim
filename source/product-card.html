@@ -64,13 +64,13 @@
 
         <div class="card__photos">
           <button class="card__arrow" type="button">
-            <svg class="card__arrow-icon card__arrow--backward" width="18" height="11" fill="none" stroke="#151c22">
+            <svg class="card__arrow-icon card__arrow-icon--backward" width="18" height="11" fill="none" stroke="#151c22">
               <use xlink:href="#icon-arrow"></use>
             </svg>
           </button>
 
           <p class="card__item">
-            <img class="card__image card__image--large" src="" width="244" height="310" alt="Product">
+            <img class="card__image card__image--large" src="img/slider-img-large-mobile@1x.jpg" width="244" height="310" alt="Product">
           </p>
 
           <button class="card__arrow" type="button">
@@ -106,53 +106,72 @@
           </ul>
         </div>
 
-        <div class="card__characteristics">
-          <h1 class="card__title title">Overalls</h1>
+        <form class="card__characteristics" method="get" action="#">
+          <div class="card__characteristics-wrapper">
+            <h1 class="card__title title">Overalls</h1>
 
-          <p class="card__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back pockets.</p>
+            <p class="card__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back pockets.</p>
 
-          <div class="card__colors">
-            <p class="card__colors-header">Color</p>
+            <div class="card__colors">
+              <p class="card__colors-header">Color</p>
 
-            <ul class="card__colors-list">
-              <li class="card__colors-item color-toggle">
-                <input class="color-toggle__input visually-hidden" id="color-1" type="checkbox" name="color-1" checked>
-                <label class="color-toggle__button color-toggle__button--light-blue" for="color-1" aria-label="Light blue"></label>
-              </li>
+              <ul class="card__colors-list">
+                <li class="card__colors-item color-toggle">
+                  <input class="color-toggle__input visually-hidden" id="color-1" type="checkbox" name="color-1" checked>
+                  <label class="color-toggle__button color-toggle__button--light-blue" for="color-1" aria-label="Light blue"></label>
+                </li>
 
-              <li class="card__colors-item color-toggle">
-                <input class="color-toggle__input visually-hidden" id="color-2" type="checkbox" name="color-2">
-                <label class="color-toggle__button color-toggle__button--deep-blue" for="color-2" aria-label="Deep blue"></label>
-              </li>
+                <li class="card__colors-item color-toggle">
+                  <input class="color-toggle__input visually-hidden" id="color-2" type="checkbox" name="color-2">
+                  <label class="color-toggle__button color-toggle__button--deep-blue" for="color-2" aria-label="Deep blue"></label>
+                </li>
 
-              <li class="card__colors-item color-toggle">
-                <input class="color-toggle__input visually-hidden" id="color-3" type="checkbox" name="color-3">
-                <label class="color-toggle__button color-toggle__button--grey" for="color-3" aria-label="Grey"></label>
-              </li>
-            </ul>
+                <li class="card__colors-item color-toggle">
+                  <input class="color-toggle__input visually-hidden" id="color-3" type="checkbox" name="color-3">
+                  <label class="color-toggle__button color-toggle__button--grey" for="color-3" aria-label="Grey"></label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card__sizes">
+              <p class="card__sizes-header">Size</p>
+
+              <ul class="card__sizes-list">
+                <li class="card__sizes-item text-toggle">
+                  <input class="text-toggle__input visually-hidden" id="size-xs" type="checkbox" name="XS">
+                  <label class="text-toggle__button" for="size-xs">XS</label>
+                </li>
+
+                <li class="card__sizes-item text-toggle">
+                  <input class="text-toggle__input visually-hidden" id="size-s" type="checkbox" name="S" checked>
+                  <label class="text-toggle__button" for="size-s">S</label>
+                </li>
+
+                <li class="card__sizes-item text-toggle">
+                  <input class="text-toggle__input visually-hidden" id="size-m" type="checkbox" name="M">
+                  <label class="text-toggle__button" for="size-m">M</label>
+                </li>
+
+                <li class="card__sizes-item text-toggle">
+                  <input class="text-toggle__input visually-hidden" id="size-l" type="checkbox" name="L">
+                  <label class="text-toggle__button" for="size-l">L</label>
+                </li>
+
+                <li class="card__sizes-item text-toggle">
+                  <input class="text-toggle__input visually-hidden" id="size-xl" type="checkbox" name="XL">
+                  <label class="text-toggle__button" for="size-xl">XL</label>
+                </li>
+              </ul>
+            </div>
+
+            <p class="card__price">$ 160</p>
+
+            <button class="card__add-button button button--one-size" type="submit">Add to cart</button>
           </div>
-
-          <div class="card__sizes">
-            <p class="card__sizes-header">Size</p>
-
-            <ul class="card__sizes-list">
-              <li class="card__sizes-item size-toggle">xs</li>
-
-              <li class="card__sizes-item size-toggle">s</li>
-
-              <li class="card__sizes-item size-toggle">m</li>
-
-              <li class="card__sizes-item size-toggle">l</li>
-
-              <li class="card__sizes-item size-toggle">xl</li>
-            </ul>
-          </div>
-
-          <p class="card__price">$ 160</p>
-
-          <button class="card__add-button button">Add to cart</button>
-        </div>
+        </form>
       </section>
     </main>
+
+    <script src="js/menu-open.js"></script>
   </body>
 </html>

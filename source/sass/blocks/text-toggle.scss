@@ -1,12 +1,13 @@
-.collection-toggle__button {
+.text-toggle__button {
   @include active-color;
 
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: $text-color-medium-dark;
   cursor: pointer;
 }
 
-.collection-toggle__input:checked + .collection-toggle__button {
+.text-toggle__input:checked + .text-toggle__button {
   color: $text-color-darkest;
 }

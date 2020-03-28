@@ -32,6 +32,10 @@
     margin: 0 auto;
   }
 
+  &--one-size {
+    width: 200px;
+  }
+
   &:hover {
     color: $text-color-active;
   }
