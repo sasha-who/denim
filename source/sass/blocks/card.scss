@@ -216,6 +216,7 @@
   }
 
   .card__characteristics-wrapper {
+    width: 275px;
     margin: 0;
     padding: 0;
   }
@@ -260,6 +261,7 @@
     @include container-desktop;
 
     margin-top: 57px;
+    margin-bottom: 122px;
   }
 
   .card__arrow {

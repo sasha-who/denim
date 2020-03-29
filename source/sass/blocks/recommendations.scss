@@ -49,3 +49,13 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .recommendations {
+    @include container-desktop;
+  }
+
+  .recommendations__title {
+    margin-bottom: 61px;
+  }
+}
