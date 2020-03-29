@@ -33,13 +33,13 @@
   top: 132px;
 
   &--backward {
-    right: 10px;
+    right: 8px;
 
     transform: rotate(90deg);
   }
 
   &--forward {
-    left: 10px;
+    left: 8px;
 
     transform: rotate(-90deg);
   }
@@ -150,10 +150,10 @@
   }
 
   .card__wrapper {
+    @include container-tablet;
+
     display: flex;
-    width: 768px;
     margin: 0 auto;
-    padding: 0 45px;
     margin-top: 38px;
 
     box-sizing: border-box;
@@ -250,5 +250,81 @@
 
   .card__price {
     margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__wrapper {
+    @include container-desktop;
+
+    margin-top: 57px;
+  }
+
+  .card__arrow {
+    display: block;
+    width: 70px;
+    height: 523px;
+  }
+
+  .card__arrow-icon {
+    top: 200px;
+
+    width: 25px;
+    height: 15px;
+
+    &--backward {
+      right: 50px;
+    }
+
+    &--forward {
+      left: 50px;
+    }
+  }
+
+  .card__photos {
+    width: 540px;
+  }
+
+  .card__image-item,
+  .card__image {
+    &--large {
+      width: 400px;
+      height: 523px;
+    }
+
+    &--mini {
+      width: 85px;
+      height: 113px;
+      margin-right: 20px;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .card__thumbnails-list {
+    padding-left: 70px;
+  }
+
+  .card__characteristics {
+    padding-top: 62px;
+    padding-left: 130px;
+  }
+
+  .card__characteristics-wrapper {
+    width: auto;
+  }
+
+  .card__title {
+    margin-bottom: 28px;
+  }
+
+  .card__description {
+    max-width: 370px;
+
+    font-size: 16px;
+    line-height: 19px;
   }
 }
