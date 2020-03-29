@@ -145,6 +145,7 @@
 
 @media (min-width: $tablet-width) {
   .card {
+    margin-bottom: 94px;
     padding: 0;
 
     background: linear-gradient(to right, $background-color-primary 52%, $background-color-secondary 52%);

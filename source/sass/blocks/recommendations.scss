@@ -20,3 +20,32 @@
 .recommendations__all {
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .recommendations {
+    @include container-tablet;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .recommendations__title {
+    order: 0;
+    max-width: 560px;
+    margin-bottom: 54px;
+  }
+
+  .recommendations__products {
+    order: 2;
+    margin-right: -30px;
+    margin-bottom: 0;
+  }
+
+  .recommendations__all {
+    order: 1;
+    align-self: flex-start;
+    margin: 0;
+  }
+}

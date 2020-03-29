@@ -49,7 +49,6 @@
 @media (min-width: $tablet-width) {
   .products {
     justify-content: flex-start;
-    margin-right: -30px;
   }
 
   .products__item {
@@ -103,12 +102,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .products {
-    &--catalog {
-      margin-right: -66px;
-    }
-  }
-
   .products__item {
     &--catalog {
       margin-right: 66px;
