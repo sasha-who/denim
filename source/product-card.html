@@ -60,115 +60,139 @@
 
     <main class="site-main">
       <section class="card">
-        <h2 class="visually-hidden">Product card</h2>
+        <div class="card__wrapper">
+          <h2 class="visually-hidden">Product card</h2>
 
-        <div class="card__photos">
-          <button class="card__arrow" type="button">
-            <svg class="card__arrow-icon card__arrow-icon--backward" width="18" height="11" fill="none" stroke="#151c22">
-              <use xlink:href="#icon-arrow"></use>
-            </svg>
-          </button>
+          <div class="card__photos">
+            <button class="card__arrow" type="button">
+              <svg class="card__arrow-icon card__arrow-icon--backward" width="18" height="11" fill="none" stroke="#151c22">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
 
-          <p class="card__item">
-            <img class="card__image card__image--large" src="img/slider-img-large-mobile@1x.jpg" width="244" height="310" alt="Product">
-          </p>
+            <p class="card__image-item card__image-item--large">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/slider-img-large-desktop@1x.jpg">
 
-          <button class="card__arrow" type="button">
-            <svg class="card__arrow-icon card__arrow-icon--forward" width="18" height="11" fill="none" stroke="#151c22">
-              <use xlink:href="#icon-arrow"></use>
-            </svg>
-          </button>
+                <source media="(min-width: 768px)" srcset="img/slider-img-large-tablet@1x.jpg">
 
-          <ul class="card__thumbnails-list">
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <img class="card__image" src="" width="244" height="310" alt="Product">
-              </a>
-            </li>
+                <img class="card__image card__image--large" src="img/slider-img-large-mobile@1x.jpg" width="244" height="310" alt="Product">
+              </picture>
+            </p>
 
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <img class="card__image" src="" width="244" height="310" alt="Product">
-              </a>
-            </li>
+            <button class="card__arrow" type="button">
+              <svg class="card__arrow-icon card__arrow-icon--forward" width="18" height="11" fill="none" stroke="#151c22">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
 
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <img class="card__image" src="" width="244" height="310" alt="Product">
-              </a>
-            </li>
+            <ul class="card__thumbnails-list">
+              <li class="card__image-item card__image-item--mini">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1366px)" srcset="img/slider-img1-mini-desktop@1x.jpg">
 
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <img class="card__image" src="" width="244" height="310" alt="Product">
-              </a>
-            </li>
-          </ul>
-        </div>
+                    <img class="card__image" src="img/slider-img1-mini-tablet@1x.jpg" width="244" height="310" alt="Product">
+                  </picture>
+                </a>
+              </li>
 
-        <form class="card__characteristics" method="get" action="#">
-          <div class="card__characteristics-wrapper">
-            <h1 class="card__title title">Overalls</h1>
+              <li class="card__image-item card__image-item--mini">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1366px)" srcset="img/slider-img2-mini-desktop@1x.jpg">
 
-            <p class="card__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back pockets.</p>
+                    <img class="card__image" src="img/slider-img2-mini-tablet@1x.jpg" width="244" height="310" alt="Product">
+                  </picture>
+                </a>
+              </li>
 
-            <div class="card__colors">
-              <p class="card__colors-header">Color</p>
+              <li class="card__image-item card__image-item--mini">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1366px)" srcset="img/slider-img3-mini-desktop@1x.jpg">
 
-              <ul class="card__colors-list">
-                <li class="card__colors-item color-toggle">
-                  <input class="color-toggle__input visually-hidden" id="color-1" type="checkbox" name="color-1" checked>
-                  <label class="color-toggle__button color-toggle__button--light-blue" for="color-1" aria-label="Light blue"></label>
-                </li>
+                    <img class="card__image" src="img/slider-img3-mini-tablet@1x.jpg" width="244" height="310" alt="Product">
+                  </picture>
+                </a>
+              </li>
 
-                <li class="card__colors-item color-toggle">
-                  <input class="color-toggle__input visually-hidden" id="color-2" type="checkbox" name="color-2">
-                  <label class="color-toggle__button color-toggle__button--deep-blue" for="color-2" aria-label="Deep blue"></label>
-                </li>
+              <li class="card__image-item card__image-item--mini">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1366px)" srcset="img/slider-img4-mini-desktop@1x.jpg">
 
-                <li class="card__colors-item color-toggle">
-                  <input class="color-toggle__input visually-hidden" id="color-3" type="checkbox" name="color-3">
-                  <label class="color-toggle__button color-toggle__button--grey" for="color-3" aria-label="Grey"></label>
-                </li>
-              </ul>
-            </div>
-
-            <div class="card__sizes">
-              <p class="card__sizes-header">Size</p>
-
-              <ul class="card__sizes-list">
-                <li class="card__sizes-item text-toggle">
-                  <input class="text-toggle__input visually-hidden" id="size-xs" type="checkbox" name="XS">
-                  <label class="text-toggle__button" for="size-xs">XS</label>
-                </li>
-
-                <li class="card__sizes-item text-toggle">
-                  <input class="text-toggle__input visually-hidden" id="size-s" type="checkbox" name="S" checked>
-                  <label class="text-toggle__button" for="size-s">S</label>
-                </li>
-
-                <li class="card__sizes-item text-toggle">
-                  <input class="text-toggle__input visually-hidden" id="size-m" type="checkbox" name="M">
-                  <label class="text-toggle__button" for="size-m">M</label>
-                </li>
-
-                <li class="card__sizes-item text-toggle">
-                  <input class="text-toggle__input visually-hidden" id="size-l" type="checkbox" name="L">
-                  <label class="text-toggle__button" for="size-l">L</label>
-                </li>
-
-                <li class="card__sizes-item text-toggle">
-                  <input class="text-toggle__input visually-hidden" id="size-xl" type="checkbox" name="XL">
-                  <label class="text-toggle__button" for="size-xl">XL</label>
-                </li>
-              </ul>
-            </div>
-
-            <p class="card__price">$ 160</p>
-
-            <button class="card__add-button button button--one-size" type="submit">Add to cart</button>
+                    <img class="card__image" src="img/slider-img4-mini-tablet@1x.jpg" width="244" height="310" alt="Product">
+                  </picture>
+                </a>
+              </li>
+            </ul>
           </div>
-        </form>
+
+          <form class="card__characteristics" method="get" action="#">
+            <div class="card__characteristics-wrapper">
+              <h1 class="card__title title">Overalls</h1>
+
+              <p class="card__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back pockets.</p>
+
+              <div class="card__colors">
+                <p class="card__colors-header">Color</p>
+
+                <ul class="card__colors-list">
+                  <li class="card__colors-item color-toggle">
+                    <input class="color-toggle__input visually-hidden" id="color-1" type="checkbox" name="color-1" checked>
+                    <label class="color-toggle__button color-toggle__button--light-blue" for="color-1" aria-label="Light blue"></label>
+                  </li>
+
+                  <li class="card__colors-item color-toggle">
+                    <input class="color-toggle__input visually-hidden" id="color-2" type="checkbox" name="color-2">
+                    <label class="color-toggle__button color-toggle__button--deep-blue" for="color-2" aria-label="Deep blue"></label>
+                  </li>
+
+                  <li class="card__colors-item color-toggle">
+                    <input class="color-toggle__input visually-hidden" id="color-3" type="checkbox" name="color-3">
+                    <label class="color-toggle__button color-toggle__button--grey" for="color-3" aria-label="Grey"></label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card__sizes">
+                <p class="card__sizes-header">Size</p>
+
+                <ul class="card__sizes-list">
+                  <li class="card__sizes-item text-toggle">
+                    <input class="text-toggle__input visually-hidden" id="size-xs" type="checkbox" name="XS">
+                    <label class="text-toggle__button text-toggle__button--size" for="size-xs">XS</label>
+                  </li>
+
+                  <li class="card__sizes-item text-toggle">
+                    <input class="text-toggle__input visually-hidden" id="size-s" type="checkbox" name="S" checked>
+                    <label class="text-toggle__button text-toggle__button--size" for="size-s">S</label>
+                  </li>
+
+                  <li class="card__sizes-item text-toggle">
+                    <input class="text-toggle__input visually-hidden" id="size-m" type="checkbox" name="M">
+                    <label class="text-toggle__button text-toggle__button--size" for="size-m">M</label>
+                  </li>
+
+                  <li class="card__sizes-item text-toggle">
+                    <input class="text-toggle__input visually-hidden" id="size-l" type="checkbox" name="L">
+                    <label class="text-toggle__button text-toggle__button--size" for="size-l">L</label>
+                  </li>
+
+                  <li class="card__sizes-item text-toggle">
+                    <input class="text-toggle__input visually-hidden" id="size-xl" type="checkbox" name="XL">
+                    <label class="text-toggle__button text-toggle__button--size" for="size-xl">XL</label>
+                  </li>
+                </ul>
+              </div>
+
+              <p class="card__price">$ 160</p>
+
+              <button class="card__add-button button button--one-size" type="submit">Add to cart</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 

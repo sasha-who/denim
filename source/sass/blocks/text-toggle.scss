@@ -11,3 +11,12 @@
 .text-toggle__input:checked + .text-toggle__button {
   color: $text-color-darkest;
 }
+
+@media (min-width: $tablet-width) {
+  .text-toggle__button {
+    &--size {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}
