@@ -1,0 +1,22 @@
+.recommendations {
+  @include container-mobile;
+
+  margin-bottom: 60px;
+
+  color: $text-color-darkest;
+  background-color: $background-color-primary;
+}
+
+.recommendations__title {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.recommendations__products {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.recommendations__all {
+  margin: 0 auto;
+}
