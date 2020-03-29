@@ -53,6 +53,8 @@
 @media (min-width: $desktop-width) {
   .recommendations {
     @include container-desktop;
+
+    margin-bottom: 78px;
   }
 
   .recommendations__title {
